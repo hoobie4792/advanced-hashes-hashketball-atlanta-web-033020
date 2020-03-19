@@ -281,28 +281,6 @@ def long_name_steals_a_ton?
     return false
   end
 end
-=======
-  player_hash.delete(:player_name)
-  return player_hash
-end
-
-def big_shoe_rebounds
-  hash = game_hash
-  player_hash = {}
-  biggest_shoe = nil
-  
-  hash.each do |team_side, team_side_values|
-    team_side_values[:players].each_with_index do |(player_data), index|
-      if player_data[:shoe] > biggest_shoe or biggest_shoe == nil
-        player_hash = player_data
-      end
-    end
-  end
-  return player_hash[:rebounds]
-end
-
-puts big_shoe_rebounds
->>>>>>> b281ae6ef7c9ddc9f794a4f76f297280d1741e29
 
 def player_by_number(number)
   hash = game_hash
