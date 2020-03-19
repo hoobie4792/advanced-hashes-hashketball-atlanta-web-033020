@@ -287,7 +287,6 @@ def player_by_number(number)
   
   hash.each do |team_side, team_side_values|
     team_side_values[:players].each do |player_data|
-      binding.pry
       if player_data[:number] == number
         return player_data[:player_name]
       end
