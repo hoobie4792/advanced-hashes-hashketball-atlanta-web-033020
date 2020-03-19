@@ -293,5 +293,3 @@ def player_by_number(number)
     end
   end
 end
-
-puts player_by_number(33)
